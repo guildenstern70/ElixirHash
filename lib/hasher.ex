@@ -6,12 +6,6 @@
 
 defmodule Hasher do
 
-  def main(password) do
-    IO.puts("Hashing password: #{password}")
-    hashed = Hasher.hash(password)
-    IO.puts("Hashed password: #{hashed}")
-  end
-
   def addSalt(message) do
     message <> "SALT"
   end
